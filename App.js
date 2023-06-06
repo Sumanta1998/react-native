@@ -2,12 +2,12 @@ import React from 'react';
 import {Text, View} from 'react-native';
 import WelcomeScreen from './Screens/WelcomeScreen';
 import HomeScreen from './Screens/HomeScreen';
-WelcomeScreen;
-HomeScreen;
+import RecipeDetailScreen from './Screens/RecipeDetailScreen';
+import DATA from './config/Resturant/DATA';
 const App = () => {
   return (
     <View style={{flex: 1}}>
-      <HomeScreen />
+      <RecipeDetailScreen recipe={DATA[0].recipes[1]} />
     </View>
   );
 };
